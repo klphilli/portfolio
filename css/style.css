@@ -128,33 +128,6 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
-  /* .grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 250px 250px 250px 250px;
-  }
-
-  .dry{
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  .oily{
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  .combo{
-    grid-row: 3;
-    grid-column: 3;
-  }
-
-  .norm{
-    grid-row: 4;
-    grid-column: 4;
-
-  } */
-
 .grid img{
   width: 100%;
   margin:0 auto;
