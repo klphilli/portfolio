@@ -1,0 +1,164 @@
+body{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    background-color: #f5dcd0;
+    color: #303030;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #dde7c7;
+    /* border: 1px solid #555; */
+  
+  }
+  
+  nav li{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    /* border-bottom: 1px solid #555; */
+
+  }
+
+  li:last-child{
+    border-bottom: none;
+  }
+  
+  nav{
+    background-color: #dde7c7;
+    padding: 25px 0;    
+    text-align: center;   
+  }
+
+  nav a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .current{
+    text-transform: uppercase;
+    background-color: #f5dcd0;
+  }
+  
+  nav a:hover{
+    text-decoration: underline;
+    color: black;
+  }
+
+  header{
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    height: 400px; /* Parallax effect */
+
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1/ span 1;
+    background-image: url(../imgs/MAIN\ .JPG);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+
+  h1{
+    font-family: 'Oswald', sans-serif; 
+    font-size: 70px;
+    line-height: 1;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  header p{
+    color: #303030;
+    font-size: 24px;
+    padding: 0 100px;
+    text-align: right;
+    line-height: 2;
+  }
+
+  footer{
+    background-color: #dde7c7;
+    color: black;
+    padding-top: 30px;
+    text-align: center;
+  }
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #f5dcd0; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #dde7c7;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f5dcd0;
+    padding: 20px;
+  }
+
+.grid img{
+  width: 100%;
+  margin:0 auto;
+}
+
+.routine img{
+  width: 100%;
+  margin:0 auto;
+}
+
+.step img{
+  width: 100%;
+  margin:0 auto;
+}
+
+@media (min-width:600px){
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  .skip{
+    left: 50%;
+    position: absolute;
+  }
+
+  .step{
+    display: grid;
+    grid-row: 3/ -1 ;
+    grid-template-columns: auto auto auto;
+
+  }
+
+
+}
