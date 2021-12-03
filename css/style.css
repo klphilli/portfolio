@@ -2,11 +2,20 @@ body{
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     background-color: #f5dcd0;
     color: #303030;
-    text-align: center;
-    font-size: 18px;
-    line-height: 2;
-    margin: 0;
-    padding: 0;
+}
+
+p{
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 50px;
+  padding: 0px;
+}
+
+
+h2{
+  text-align: center;
+  padding-top: 20px;
 }
 
 nav ul{
@@ -14,25 +23,17 @@ nav ul{
     margin: 0;
     padding: 0;
     background-color: #dde7c7;
-    /* border: 1px solid #555; */
-  
   }
   
   nav li{
     display: block;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    /* border-bottom: 1px solid #555; */
-
-  }
-
-  li:last-child{
-    border-bottom: none;
   }
   
   nav{
     background-color: #dde7c7;
-    padding: 25px 0;    
+    padding: 5px 0;    
     text-align: center;   
   }
 
@@ -68,31 +69,43 @@ nav ul{
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
-  
+
+  .routine img:hover {
+    opacity: 0.5;
+  }
+
+  .routine{
+    margin: 50px;
+  }
+
+  .grid{
+    margin: 50px;
+  }
 
   h1{
     font-family: 'Oswald', sans-serif; 
     font-size: 70px;
     line-height: 1;
     padding: 50px 0;
+    margin: 50px;
     text-align: center;
   }
 
-  header p{
+  /* header p{
     color: #303030;
     font-size: 24px;
     padding: 0 100px;
     text-align: right;
     line-height: 2;
-  }
+  } */
 
   footer{
     background-color: #dde7c7;
     color: black;
-    padding-top: 30px;
+    margin: 10px;
     text-align: center;
   }
+  
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -142,6 +155,20 @@ input[type=text], select, textarea {
   margin:0 auto;
 }
 
+.skip{
+  background: black;
+  height: 30px;
+  padding: 8px;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.skip:focus {
+  transform: translateY(0%);
+}
+
 @media (min-width:600px){
   nav ul{
     display: flex;
@@ -151,14 +178,42 @@ input[type=text], select, textarea {
   .skip{
     left: 50%;
     position: absolute;
+    transform: translateY(-100%);
   }
 
   .step{
     display: grid;
     grid-row: 3/ -1 ;
     grid-template-columns: auto auto auto;
-
   }
 
 
 }
+
+@media (min-width:800px){
+  h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  
+  header{
+    animation: none;
+    background-color: #f5dcd0;
+  }
+ }
