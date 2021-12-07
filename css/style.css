@@ -1,7 +1,7 @@
 body{
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    background-color: #f5dcd0;
-    color: #303030;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  background-color: #f5dcd0;
+  color: #303030;
 }
 
 p{
@@ -16,129 +16,104 @@ p{
 h2{
   text-align: center;
   padding-top: 20px;
+  margin: 10px;
 }
 
 nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #dde7c7;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #dde7c7;
+}
   
-  nav li{
-    display: block;
-    padding: 5px;
-    text-align: center;
-  }
+nav li{
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
   
-  nav{
-    background-color: #dde7c7;
-    padding: 5px 0;    
-    text-align: center;   
-  }
+nav{
+  background-color: #dde7c7;
+  padding: 15px 0;    
+  text-align: center;   
+}
 
-  nav a{
-    display: block;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-  }
+nav a{
+  display: block;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  .current{
-    text-transform: uppercase;
-    background-color: #f5dcd0;
-  }
+.current{
+  text-transform: uppercase;
+  background-color: #f5dcd0;
+}
   
-  nav a:hover{
-    text-decoration: underline;
-    color: black;
-  }
+nav a:hover{
+  text-decoration: underline;
+  color: black;
+}
 
-  header{
-    background-attachment: fixed; /* Parallax effect */
-    background-position: center; /* Parallax effect */
-    background-size: cover; /* Parallax effect */
-    height: 400px; /* Parallax effect */
+header{
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; 
+  height: 400px; 
 
-    display: grid;
-    grid-column: 1 / -1;
-    grid-row: 1/ span 1;
-    background-image: url(../imgs/MAIN\ .JPG);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1/ span 1;
+  background-image: url(../imgs/MAIN\ .JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .routine img:hover {
-    opacity: 0.5;
-  }
+.routine img:hover {
+  opacity: 0.5;
+}
 
-  .routine{
-    margin: 50px;
-  }
+ .routine img{
+  border: 5px solid #303030;
+  margin: 50px;
+}
 
-  .grid{
-    margin: 50px;
-  }
+.routine{
+  margin: 50px;
+}
 
-  h1{
-    font-family: 'Oswald', sans-serif; 
-    font-size: 70px;
-    line-height: 1;
-    padding: 50px 0;
-    margin: 50px;
-    text-align: center;
-  }
 
-  /* header p{
-    color: #303030;
-    font-size: 24px;
-    padding: 0 100px;
-    text-align: right;
-    line-height: 2;
-  } */
+h1{
+  font-family: 'Oswald', sans-serif; 
+  font-size: 70px;
+  line-height: 1;
+  padding: 50px 0;
+  margin: 50px;
+  text-align: center;
+}
 
-  footer{
-    background-color: #dde7c7;
-    color: black;
-    margin: 10px;
-    text-align: center;
-  }
-  
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #f5dcd0; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #dde7c7;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f5dcd0;
-    padding: 20px;
-  }
+footer{
+  background-color: #dde7c7;
+  color: black;
+  margin: 10px;
+  text-align: center;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+}
+
+.grid img{
+  border: 5px solid #303030;
+  width: 300px;
+  margin: 50px;
+}
 
 .grid img{
   width: 100%;
@@ -155,19 +130,106 @@ input[type=text], select, textarea {
   margin:0 auto;
 }
 
-.skip{
-  background: black;
-  height: 30px;
-  padding: 8px;
-  left: 50%;
-  position: absolute;
-  transform: translateY(-100%);
-  transition: transform 0.3s;
+  
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #f5dcd0; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #dde7c7;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+  
+  /* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f5dcd0;
+  padding: 20px;
 }
 
-.skip:focus {
-  transform: translateY(0%);
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -70px;
 }
+
+.skip a:focus{
+  position: absolute;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #dde7c7;
+  color: #303030;
+  transform: rotateY(180deg);
+}
+
 
 @media (min-width:600px){
   nav ul{
@@ -185,6 +247,20 @@ input[type=text], select, textarea {
     display: grid;
     grid-row: 3/ -1 ;
     grid-template-columns: auto auto auto;
+  }
+
+  .four{
+    display: grid;
+    grid-row: 4/ -1 ;
+    grid-template-columns: auto auto auto;
+  }
+
+  .four img{
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
   }
 
 
@@ -208,12 +284,43 @@ input[type=text], select, textarea {
     }
   }
 
+  .grid{
+    display: grid;
+    grid-row: 4/-1;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .grid img{
+    display: block;
+    width: 75%;
+    height: 50%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .four{
+    display: grid;
+    grid-row: 4/ -1 ;
+    grid-template-columns: auto auto auto;
+  }
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+ }
+
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   
   header{
     animation: none;
-    background-color: #f5dcd0;
+    background-attachment: initial;
   }
+
+  .skip a{
+    -webkit-transition: initial; 
+    transition: initial; 
+  }
+
  }

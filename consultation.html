@@ -21,7 +21,7 @@
 </script>
 
   <body>
-    <a class="Skip" href="#main">Skip to content</a>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
     <nav>
         <ul>
           <li><a href="index.html">Main</a></li>
@@ -37,8 +37,21 @@
 
     <main>
       <p>We know skin care can be complicated. Having problems identifying skin type or products? Contact Skin. </p>
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="imgs/icon1.png" alt="Skin by KP" style="width:300px;height:200px">
+          </div>
+          <div class="flip-box-back">
+            <h2>Skin by KP</h2>
+            <p>We would love to help you</p>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
-        <form action="action_page.php">
+        <form action="https://formspree.io/f/xvoloopr" method="POST">
       
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name..">
