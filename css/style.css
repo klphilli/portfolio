@@ -226,7 +226,7 @@ input[type=submit]:hover {
 /* Style the back side */
 .flip-box-back {
   background-color: #dde7c7;
-  color: #303030;
+  color: black;
   transform: rotateY(180deg);
 }
 
@@ -298,11 +298,21 @@ input[type=submit]:hover {
     margin: 0 auto;
   }
 
+  .grid p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 5px;
+
+  }
+
   .four{
     display: grid;
     grid-row: 4/ -1 ;
     grid-template-columns: auto auto auto;
   }
+
 
   iframe {
     display: block;
