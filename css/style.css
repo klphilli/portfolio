@@ -131,19 +131,19 @@ footer{
 }
 
   
-/* Style inputs with type="text", select elements and textareas */
+
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #f5dcd0; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #f5dcd0; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
 }
   
-  /* Style the submit button with a specific background color etc */
+  
 input[type=submit] {
   background-color: #dde7c7;
   color: black;
@@ -153,12 +153,12 @@ input[type=submit] {
   cursor: pointer;
 }
   
-  /* When moving the mouse over the submit button, add a darker green color */
+ 
 input[type=submit]:hover {
   background-color: #45a049;
 }
   
-  /* Add a background color and some padding around the form */
+ 
 .container {
   border-radius: 5px;
   background-color: #f5dcd0;
@@ -186,14 +186,14 @@ input[type=submit]:hover {
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align:center;
 }
 
-/* This container is needed to position the front and back side */
+
 .flip-box-inner {
   position: relative;
   width: 100%;
@@ -203,27 +203,26 @@ input[type=submit]:hover {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
+
 .flip-box-front, .flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-box-front {
   background-color: #bbb;
   color: black;
 }
 
-/* Style the back side */
+
 .flip-box-back {
   background-color: #dde7c7;
   color: black;
@@ -318,6 +317,58 @@ input[type=submit]:hover {
     display: block;
     margin: 0 auto;
  }
+
+ .dry img {
+  padding: 50px;
+  /* background-color: #dde7c7; */
+  transition: transform .2s; /* Animation */
+  /* width: 200px;
+  height: 200px; */
+  margin: 0 auto;
+}
+
+.dry:hover {
+  transform: scale(.85); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.oily img {
+  padding: 50px;
+  /* background-color: #dde7c7; */
+  transition: transform .2s; /* Animation */
+  /* width: 200px;
+  height: 200px; */
+  margin: 0 auto;
+}
+
+.oily:hover {
+  transform: scale(.85); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.combo img {
+  padding: 50px;
+  /* background-color: #dde7c7; */
+  transition: transform .2s; /* Animation */
+  /* width: 200px;
+  height: 200px; */
+  margin: 0 auto;
+}
+
+.combo:hover {
+  transform: scale(.85); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.norm img {
+  padding: 50px;
+  /* background-color: #dde7c7; */
+  transition: transform .2s; /* Animation */
+  /* width: 200px;
+  height: 200px; */
+  margin: 0 auto;
+}
+
+.norm:hover {
+  transform: scale(.85); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 }
 
